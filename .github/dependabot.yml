@@ -1,0 +1,30 @@
+version: 2
+updates:
+  - package-ecosystem: "github-actions"
+    directory: "/"
+    schedule:
+      interval: "weekly"
+    groups:
+      updates:
+        patterns:
+          - "*"
+        update-types:
+          - patch
+          - minor
+  - package-ecosystem: pip
+    directory: "/docs"
+    labels:
+      - dependencies
+      - documentation
+    schedule:
+      interval: weekly
+    groups:
+      docker:
+        patterns:
+          - "docker/*"
+      patches:
+        patterns:
+          - "*"
+        update-types:
+          - patch
+          - minor
