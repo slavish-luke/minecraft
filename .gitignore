@@ -1,4 +1,5 @@
 .vscode
+.claude/settings.local.json
 /data/
 /.idea/
 *.iml
