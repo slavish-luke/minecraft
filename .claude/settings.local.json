@@ -7,7 +7,9 @@
       "Bash(ls -la /tmp/mc_clone_tmp)",
       "Read(//tmp/**)",
       "Bash(mv /tmp/mc_clone_tmp/.git /tmp/mc_clone_tmp/README.md \"/c/Users/lukek/OneDrive/Desktop/minecraft/minecraft/\")",
-      "Bash(rmdir /tmp/mc_clone_tmp)"
+      "Bash(rmdir /tmp/mc_clone_tmp)",
+      "Bash(docker rm *)",
+      "Bash(docker rename *)"
     ]
   }
 }
